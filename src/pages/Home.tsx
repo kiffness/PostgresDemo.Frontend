@@ -3,7 +3,7 @@ import type { TodoItem, CreateTodoRequest, ProblemDetails } from "../types/todo"
 import { getTodos, createTodo, updateTodo, deleteTodo } from "../api/todoApi";
 import { TodoList } from "../components/TodoList";
 import { TodoForm } from "../components/TodoForm";
-import {Container, Typography, Alert, Pagination, Stack, ToggleButtonGroup, ToggleButton, Box} from "@mui/material";
+import {Container, Alert, Pagination, Stack, ToggleButtonGroup, ToggleButton} from "@mui/material";
 import { toast } from "react-toastify";
 import { Footer } from "../components/Footer";
 import {Header} from "../components/Header.tsx";
