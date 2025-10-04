@@ -1,7 +1,7 @@
 import type {CreateTodoRequest, TodoItem, UpdateTodoRequest} from "../types/todo.ts";
 import {handleApiResponse} from "./apiHelper.ts";
 
-const API_BASE = `http://localhost:5000/api/todo`;
+const API_BASE = import.meta.env.VITE_API_URL;
 
 export async function getTodos(): Promise<TodoItem[]> {
     const res = await fetch(API_BASE);
